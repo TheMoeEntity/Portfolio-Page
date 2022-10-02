@@ -10,13 +10,28 @@
     width: 140px; 
     height: 140px;
   }
+  .classesContainer > i {
+    flex: 20%;
+    margin: 15px;
+  }
   .moreSkills {
     width: 100%;
     height: auto;
+    max-width: 600px;
     padding: 20px;
   }
+  .moreSkills h4 {
+    margin-bottom: 15px;
+  }
   .more {
-    
+    width: 100%;
+    background: rgb(233, 233, 233);
+    height: 25px;
+  }
+  .width {
+    width: 80%;
+    height: 100%;
+    background-color: #BBBBBB;
   }
 
   @media screen and (max-width:600px) {
@@ -32,6 +47,10 @@
     }
     .classesContainer > div {
       flex: 100% !important;
+    }
+    .classesContainer > i {
+      flex: 20%;
+      margin: 15px;
     }
     .classesContainer {
       margin-bottom: 50px;

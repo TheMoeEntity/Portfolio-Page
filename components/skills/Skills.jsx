@@ -65,10 +65,7 @@ export const Skills = () => {
       name: "MongoDB",
       width: "70%"
     },
-    {
-      name: "Nextjs",
-      width: "90%"
-    },
+
     {
       name: "Svelte",
       width: "80%"
@@ -79,11 +76,11 @@ export const Skills = () => {
     },
     {
       name: "Firebase",
-      width: "60%"
+      width: "65%"
     },
     {
       name: "Express",
-      width: "70%"
+      width: "60%"
     }
   ]
 
@@ -102,14 +99,26 @@ export const Skills = () => {
                 <Card width={skill.width} progress={true} border={skill.color} classname={skill.icon} key={key} name={skill.name} />
             ))
             }
+            <i aria-hidden="true"></i>
+		      	<i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
         </div>
         <div className={styles.moreSkills}>
-            <div>
-              <h4>NextJs</h4>
-              <div className={styles.more}>
 
+          {
+            moreSkills.map((item,key)=> (
+              
+              <div key={key}>
+              <h4>{item.name}</h4>
+              <div className={styles.more}>
+                <div style={{
+                  width: item.width
+                }} className={styles.width}></div>
               </div>
             </div>
+            ))
+          }
+
 
         </div>
     </div>
