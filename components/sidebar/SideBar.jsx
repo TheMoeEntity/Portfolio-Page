@@ -7,15 +7,15 @@ import Link from 'next/link'
 
 export const SideBar = ({open}) => {
   return (
-   
+
    <div style={
         {
             left:open ? "0%":"-100%",
             width: open ? "65%": "30%"
         }
-    } 
+    }
     className={styles.sidebar}>
-    <div className={styles.sidebarcontent}> 
+    <div className={styles.sidebarcontent}>
          <motion.div
          initial="hidden" animate="visible"
          variants={{
@@ -32,17 +32,17 @@ export const SideBar = ({open}) => {
               }
             }
           }}
-      > 
+      >
         <div className={styles.profile}>
             {/* <Image objectFit='cover' layout='responsive' width="100%" priority height="100%" src={`/Images/me.png`} /> */}
             <img width="100%" height="100%" src={`/Images/me.png`} />
         </div>
         <div className={styles.caption}>
-            <h3>Moses C. Nwigberi</h3>
+            <h3>Moses Nwigberi</h3>
             <h6>WEB/iOS DEVELOPER <span>IN LAGOS, NIGERIA</span></h6>
         </div>
         </motion.div>
-        
+
         <motion.div
             initial={{y:'100vh', opacity:0}}
             animate ={{y:0, opacity:1}}
@@ -65,7 +65,7 @@ export const SideBar = ({open}) => {
             </ul>
           </div>
           <div className={styles.copyright}>
-           <span>© Copyright ©2022 All rights reserved |</span> 
+           <span>© Copyright ©2022 All rights reserved |</span>
           </div>
         </div>
         </motion.div>
