@@ -46,7 +46,7 @@ export const Footer = () => {
 			setStatus(allStatus.pending)
 		}
 
-		fetch('/api/contact/', {
+		fetch('./api/contact/', {
 			method: 'POST',
 			headers: {
 				'Accept': 'application/json, text/plain, */*',
