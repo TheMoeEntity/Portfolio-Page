@@ -145,6 +145,21 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width:480px) {
+  .partners {
+      background-attachment: scroll;
+      /* background-size:1200px; */
+      background-position: bottom;
+      /* background-repeat: repeat; */
+  }
+  /* .partners div:nth-child(2) > span i {
+    color: #2c98f0;
+  }
+  .partners div:nth-child(2) > span h4 {
+    color: #2c98f0;
+  } */
+}
+
 .partners div:nth-child(2) {
   position: absolute;
   top: 50%;
