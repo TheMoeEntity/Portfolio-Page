@@ -1,0 +1,58 @@
+.about {
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px;
+  }
+  .about h5 {
+    letter-spacing: 4px;
+    font-weight: 300;
+  }
+  .about h3 {
+    letter-spacing: 4px;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .about p {
+    font-weight: 250;
+    line-height: 170%;
+  }
+  .classesContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  .classesContainer > div {
+    flex: 20%;
+    margin: 15px;
+    width: 140px;
+    height: 140px;
+  }
+
+  @media screen and (max-width:600px) {
+    .sidebar {
+      left: -100%;
+    }
+    .maincontent {
+      margin-left: 0%;
+      width: 100%;
+    }
+    .about p {
+      text-align: justify;
+    }
+
+}
+@media screen and (max-width:650px) {
+  .classesContainer > div {
+    flex: 100% !important;
+  }
+  .classesContainer {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width:743px) and (max-width:1063px){
+  .classesContainer > div {
+    flex: 40% !important;
+  }
+}
