@@ -1,119 +1,52 @@
 import React from 'react'
-import { useState,useRef } from 'react'
+import { useState } from 'react'
 import styles from '../styles/footer.module.css'
 import mainstyles from '../styles/Home.module.css'
-// import { motion } from 'framer-motion'
-// import { useInView } from "react-intersection-observer"
-// import { useEffect } from "react"
-// import { useAnimation } from "framer-motion"
 
 export const Footer = () => {
 
-	// const {ref, inView} = useInView()
-	// const animation = useAnimation()
-
-	// useEffect(()=> {
-	// 	if (inView) {
-	// 	  animation.start({
-	// 		  y:0,
-	// 		  transition: {
-	// 			type: "spring",
-	// 			duration: 2,
-	// 			delay:0.5,
-	// 			bounce: 0.6
-	// 		  },
-	// 	  })
-	// 	} 
-		
-	// 	if (!inView) {
-	// 	  animation.start({
-	// 		  y:"100vh",
-	// 	  })
-	// 	}
-	//   },[inView])
-
-	const [userDetails,setUserDetails] = useState({
-		firstName: "",
-		lastName: "",
-		email: "",
-		phone:"",
-		message: ""
-	})
-	const [submitted,setSubmitted] = useState(false)
-	const [statusMessage,setStatus] = useState("")
-	const Messagefield = useRef(null)
-	const fName = useRef(null)
-	const lName = useRef(null)
-	const email = useRef(null)
-	const phone = useRef(null)
-
-	const setuser = (value,field)=> {
- 
-		switch (field) {
-			case "firstName":
-				setUserDetails(prevDetails => {
-					return {
-						...prevDetails,
-						firstName: value
-					}
-				})
-				break
-			case "lastName":
-				setUserDetails(prevDetails => {
-					return {
-						...prevDetails,
-						lastName: value
-					}
-				})
-				break
-			case "email":
-				setUserDetails(prevDetails => {
-					return {
-						...prevDetails,
-						email: value
-					}
-				})
-				break
-			case "phone":
-				setUserDetails(prevDetails => {
-					return {
-						...prevDetails,
-						phone: value
-					}
-				})
-				break
-			case "message":
-				setUserDetails(prevDetails => {
-					return {
-						...prevDetails,
-						message: value
-					}
-				})
-				break
-		}
-
+	const allStatus = {
+		pending: "Message is being sent.....",
+		error:"There was an error sending message: Error: ",
+		success: "Message sent successfully, I would respond to you as soon as possible"
 	}
+
+	const [statusMessage,setStatus] = useState("")
+
 
 	const handlesubmit = e => {
 		e.preventDefault()
-		
-		if (userDetails.firstName === "") {
+		const FName = e.target[0].value
+		const LName = e.target[1].value
+		const mail = e.target[2].value
+		const Phone = e.target[3].value
+		const msg = e.target[4].value
+		const userDetails = {
+			firstName: FName,
+			lastName: LName,
+			email: mail,
+			phone:Phone,
+			message: msg
+		}
+
+	
+		if (FName === "") {
 			setStatus("Your Name is required sir/ma'am ;)")
 			return
-		} else if (userDetails.email === "") {
+		} else if (mail === "") {
 			setStatus("A valid email for feedback is required ;)")
 			return
-		} else if (userDetails.phone === "") {
+		} else if (Phone === "") {
 			setStatus("Your phone Number is equally required ;)")
 			return
-		} else if (userDetails.message === "" || userDetails.message.length <= 10) {
+		} else if (msg === "" || msg.length <= 10) {
 			setStatus("Message really cannot be empty or short ;)")
 			return
 		} else {
-			setStatus("Message is being sent.....")
+			setStatus(allStatus.pending)
 		}
 
-		fetch('/api/contact/contact', {
+		fetch('/api/contact/', {
 			method: 'POST',
 			headers: {
 				'Accept': 'application/json, text/plain, */*',
@@ -128,35 +61,21 @@ export const Footer = () => {
 			if (!res.ok) {
 				
 			  const error = (data && data.message) || res.status;
-			  setStatus("There was an error sending message: Error: "+error)
+			  setStatus(allStatus.error +error)
 			  return Promise.reject(error)
 			
 			} else if (res.status === 200) {
 				
-				setSubmitted(true)
-				setStatus("Message sent successfully, we will respond to you shortly")
+				setStatus(allStatus.success)
 				setTimeout(() => {
 					setStatus("")
 				}, 15000);
-				Messagefield.current.value = ""
-				fName.current.value = ""
-				lName.current.value = ""
-				email.current.value = ""
-				phone.current.value = ""
-				setUserDetails(()=> {
-					return {
-						firstName: "",
-						lastName: "",
-						email: "",
-						phone:"",
-						message: ""
-					}
-				})
+				e.target.reset()
 			}
 		})
 		.catch(err => {
-			alert("An error occured while trying to send message")
-			setStatus("There was an error sending message. Error: "+err)
+			alert("An error occured while trying to send message, try again")
+			setStatus(allStatus.error+err)
 			setTimeout(() => {
 				setStatus("")
 			}, 15000);
@@ -234,13 +153,20 @@ export const Footer = () => {
             <div>
                 <h2>Inquire/Contact me</h2>
                 Reach out for a project or just say Hi
-                <form>
-                    <input type="text" placeholder='First Name' />
-                    <input type="text" placeholder='Last Name' />
-                    <input type="email" placeholder='Your Email' />
-                    <input type="phone" placeholder='Your Phone' />
-                    <textarea name="" id="" placeholder='Your Message' cols="30" rows="10"></textarea>
+                <form onSubmit={handlesubmit}>
+                    <input required type="text" placeholder='First Name' />
+                    <input required type="text" placeholder='Last Name' />
+                    <input required type="email" placeholder='Your Email' />
+                    <input required type="phone" placeholder='Your Phone' />
+                    <textarea required name="" id="" placeholder='Your Message' cols="30" rows="10"></textarea>
                     <button type="submit">SUBMIT</button>
+					<p
+					style={{
+						color: statusMessage === allStatus.error ? "red" :
+						statusMessage === allStatus.success ? "green":
+						statusMessage === allStatus.pending ? "orange": "rgba(0,0,0,0.7)"
+					}}
+					>{statusMessage}</p>
                 </form>
             </div>
 
