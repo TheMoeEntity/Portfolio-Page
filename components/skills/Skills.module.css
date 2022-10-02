@@ -7,8 +7,16 @@
   .classesContainer > div {
     flex: 20%;
     margin: 15px;
-    width: 140px;
+    width: 140px; 
     height: 140px;
+  }
+  .moreSkills {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .more {
+    
   }
 
   @media screen and (max-width:600px) {

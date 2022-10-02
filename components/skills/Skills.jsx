@@ -56,6 +56,37 @@ export const Skills = () => {
         },
   ]
 
+  const moreSkills = [
+    {
+      name: "Nextjs",
+      width: "90%"
+    },
+    {
+      name: "MongoDB",
+      width: "70%"
+    },
+    {
+      name: "Nextjs",
+      width: "90%"
+    },
+    {
+      name: "Svelte",
+      width: "80%"
+    },
+    {
+      name: "SvelteKit",
+      width: "60%"
+    },
+    {
+      name: "Firebase",
+      width: "60%"
+    },
+    {
+      name: "Express",
+      width: "70%"
+    }
+  ]
+
   return (
     <div>
         <h5>MY SKILL SET</h5>
@@ -71,6 +102,15 @@ export const Skills = () => {
                 <Card width={skill.width} progress={true} border={skill.color} classname={skill.icon} key={key} name={skill.name} />
             ))
             }
+        </div>
+        <div className={styles.moreSkills}>
+            <div>
+              <h4>NextJs</h4>
+              <div className={styles.more}>
+
+              </div>
+            </div>
+
         </div>
     </div>
   )

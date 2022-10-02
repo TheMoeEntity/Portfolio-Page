@@ -6,7 +6,7 @@
   flex-flow: row wrap;
 }
 .sidebar {
-  width: 30%;
+  width: 30%; 
   overflow: scroll !important;
   display: flex;
   justify-content: flex-end;

@@ -38,7 +38,7 @@ export default function Home() {
         </motion.div> */}
           <SideBar open={sideBarOpen} />
           
-        <div className={styles.maincontent}>
+        <div className={styles.maincontent}> 
         <motion.div
         initial={{x:'-100vw'}}
         animate ={{x:0}}
