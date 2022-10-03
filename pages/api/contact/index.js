@@ -1,5 +1,5 @@
 require('dotenv').config()
-export default function handler(req, res) {
+export default async function handler(req, res) {
     const mailer = require('nodemailer')
     
     const transporter = mailer.createTransport({
@@ -24,20 +24,46 @@ export default function handler(req, res) {
         `
     }
 
-    transporter.sendMail(mailData, function(err,info) {
-        let status
-        if (err) {
-            status = err
-            console.log(err)
-            res.status(500).json(status)
-        } else {
-            status = info
-            console.log(info)
-            res.status(200).json(status)
-        }
-        
-    })
+    await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error, success) {
+            if (error) {
+                console.log(error);
+                reject(error);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        });
+    });
+    
 
+    // transporter.sendMail(mailData, function(err,info) {
+    //     let status
+    //     if (err) {
+    //         status = err
+    //         console.log(err)
+    //         res.status(500).json(status)
+    //     } else {
+    //         status = info
+    //         console.log(info)
+    //         res.status(200).json(status)
+    //     }
+        
+    // })
+
+    await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(mailData, (err, info) => {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                console.log(info);
+                resolve(info);
+            }
+        });
+    });
     res.status(200).end()
 }
 
