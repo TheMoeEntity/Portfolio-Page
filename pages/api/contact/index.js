@@ -38,20 +38,6 @@ export default async function handler(req, res) {
     });
     
 
-    // transporter.sendMail(mailData, function(err,info) {
-    //     let status
-    //     if (err) {
-    //         status = err
-    //         console.log(err)
-    //         res.status(500).json(status)
-    //     } else {
-    //         status = info
-    //         console.log(info)
-    //         res.status(200).json(status)
-    //     }
-        
-    // })
-
     await new Promise((resolve, reject) => {
         // send mail
         transporter.sendMail(mailData, (err, info) => {
