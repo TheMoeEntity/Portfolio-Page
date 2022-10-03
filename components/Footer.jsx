@@ -64,7 +64,7 @@ export const Footer = () => {
 			  setStatus(allStatus.error +error)
 			  return Promise.reject(error)
 			
-			} else if (res.status === 200) {
+			} else if (res.ok) {
 				
 				setStatus(allStatus.success)
 				setTimeout(() => {
@@ -74,12 +74,13 @@ export const Footer = () => {
 			}
 		})
 		.catch(err => {
-			alert("An error occured while trying to send message, try again")
 			setStatus(allStatus.error+err)
 			setTimeout(() => {
 				setStatus("")
 			}, 15000);
 		})
+
+		console.log(userDetails)
 		
 	}
 
