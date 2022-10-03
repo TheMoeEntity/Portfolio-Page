@@ -1,14 +1,45 @@
 import Image from "next/image"
 import styles from './Hero.module.css'
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
+import { useScreenWidth } from "../../pages/api/hello"
+
+
+const assets = [
+  './Images/devspace.jpeg',
+  './Images/smile.jpg',
+  './Images/me2.PNG'
+]
+
+
 
 export const Hero = ({openSideBar,open}) => {
 
+  const screenSize = useScreenWidth()
   const SideBar = ()=> {
     openSideBar()
   }
+  const [counter,setCounter] = useState(0)
+  
+  useEffect(()=> {
+   
+      const interval = setInterval(() => {
+        setCounter(val => {
+          return val >= 2 ? 0 : val+1
+        })
+      }, 7000);
+      return () => clearInterval(interval);
+
+  },[])
+
+  useEffect(()=> {
+    
+  },[counter])
+
   return (
-    <div className={styles.hero}>
+    <div style={{
+      background: `url('${assets[counter]}')`,
+    }} className={styles.hero}>
         {/* <img width={"100%"} height={"100%"} src="/Images/devspace.jpeg" alt="dev space" /> */}
         <div className={styles.overlay}></div>
         <div onClick={SideBar} className={styles.hamburger}>
@@ -54,9 +85,12 @@ export const Hero = ({openSideBar,open}) => {
                 bounce:0.6
               }}
             >
-            <h1>{`I'm`} a Front End Web Developer.</h1> <br />
+            <h1>{counter === 0 ? "I'm a Front End Web Developer.":
+            counter ===1 ? "":"I'm a mobile developer"}</h1> <br />
 
-            <h3>{`I create websites! ain't that cool?`}</h3>
+            <h3>{counter === 0 ? `I create websites! ain't that cool?`:
+                  counter === 1 ? "I make web apps" :
+                        'I make iOS apps'}</h3>
             <button>View portfolio</button>
             </motion.div>
             
