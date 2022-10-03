@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer"
 import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { useAnimation } from "framer-motion"
-import mainstyles from '../../styles/Home.module.css'
+
 
 export const About = () => {
 
@@ -36,21 +36,17 @@ export const About = () => {
     
       ])
 
-      const {ref, inView} = useInView()
+      const [ref, inView] = useInView()
       const animation = useAnimation()
-      const {offerRef, offerInView} = useInView()
+      const [offerRef, offerInView] = useInView()
       const offerAnimation = useAnimation()
 
       const animationEnd = () => {
         
         setAboutCounter(counter => counter + 1)
         animation.start({
-          x:"-40vw"
+          x:"-90vw"
       }) 
-      }
-
-      const offerEnd = ()=> {
-
       }
     
       useEffect(()=> {
@@ -77,20 +73,25 @@ export const About = () => {
       useEffect(()=> {
 
         if (offerInView) {
+         
           offerAnimation.start({
-              x:0,
+              scale:1,
               opacity:1,
               transition: {
                 duration: 1,
+                delay:0.5,
+                type:'spring',
+                bounce:0.4
               }
           })
 
         } 
         
         if (!offerInView) {
-
+          
           offerAnimation.start({
-            x:"-100vw"
+            scale:0.1,
+            opacity:0
           }) 
         }
       },[offerInView])
@@ -113,14 +114,20 @@ export const About = () => {
             <br /> <br />
             At the moment, I am a 300L student of Chemical Engineering in the University of Lagos, Akoka. My hobbies include coding(duh), web development(obviously), mobile development(lol😂) and FIFA. I am also pretty decent in french language( ola amigo!)
         </p> <br />
-      
+
+        <div ref={offerRef}>
+        <motion.div
+        animate={offerAnimation}
+        >
         <div id="services" className={styles.classesContainer}>
           {
             
             classes.map((skill,key)=> (
               <Card progress={false} border={skill.color} classname={skill.icon} key={key} name={skill.name} />
-            ))
-          }
+              ))
+            }
+        </div>
+        </motion.div>
         </div>
       
 

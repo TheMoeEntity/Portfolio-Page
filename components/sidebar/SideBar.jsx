@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../styles/Home.module.css'
-// import profile from '../../public/Images/me.png'
 import Image from 'next/image'
+import profile from '../../public/Images/me2.PNG'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
@@ -11,7 +11,8 @@ export const SideBar = ({open}) => {
    <div style={
         {
             left:open ? "0%":"-100%",
-            width: open ? "65%": "30%"
+            width: open ? "75%": "30%",
+            justifyContent:open ? "flex-start":"flex-end"
         }
     }
     className={styles.sidebar}>
@@ -35,7 +36,7 @@ export const SideBar = ({open}) => {
       >
         <div className={styles.profile}>
             {/* <Image objectFit='cover' layout='responsive' width="100%" priority height="100%" src={`/Images/me.png`} /> */}
-            <img width="100%" height="100%" src={`/Images/me.png`} />
+            <Image width="100%" priority layout='responsive' height="100%" src={profile} />
         </div>
         <div className={styles.caption}>
             <h3>Moses Nwigberi</h3>
@@ -65,7 +66,7 @@ export const SideBar = ({open}) => {
             </ul>
           </div>
           <div className={styles.copyright}>
-           <span>© Copyright ©2022 All rights reserved |</span>
+           <span> <h5>© Copyright ©2022 All rights reserved |</h5></span>
           </div>
         </div>
         </motion.div>

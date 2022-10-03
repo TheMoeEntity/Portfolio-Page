@@ -163,7 +163,7 @@ export const Footer = () => {
                     <button type="submit">SUBMIT</button>
 					<p
 					style={{
-						color: statusMessage === allStatus.error ? "red" :
+						color: (statusMessage.includes(allStatus.error)) ? "red" :
 						statusMessage === allStatus.success ? "green":
 						statusMessage === allStatus.pending ? "orange": "rgba(0,0,0,0.7)"
 					}}

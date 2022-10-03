@@ -26,19 +26,11 @@ export default function Home() {
       </Head>
 
       <div className={styles.main}>
-        {/* <motion.div
-          initial={{x:'100vw'}}
-          animate ={{x:0}}
-          transition = {{
-            duration: 1.5,
-            type:'spring',
-            bounce:0.6
-          }}
-        >
-        </motion.div> */}
           <SideBar open={sideBarOpen} />
           
-        <div className={styles.maincontent}> 
+        <div style={{
+          marginLeft: sideBarOpen ? "75%":"0"
+        }} className={styles.maincontent}> 
         <motion.div
         initial={{x:'-100vw'}}
         animate ={{x:0}}

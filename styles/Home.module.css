@@ -75,7 +75,7 @@
 .navLinks ul {
   width: fit-content;
   height: fit-content;
-  transform: translateX(-10%);
+  transform: translateX(-15%);
 }
 
 .navLinks ul li {
@@ -279,14 +279,18 @@
       left: 0 !important;
       background: none;
     }
+    .maincontent {
+      margin-left: 30% !important;
+    }
 }
-/* @media screen and (max-width:440px) {
-  .sidebar {
-    width: 65% !important;
+@media screen and (min-width:375px) {
+  .caption h6 {
+    padding: 0 8px;
+    line-height: 190%;
+  }
+  .copyright span h5 {
+    font-weight: 400;
+    padding: 0 15px;
+    text-align: center;
   }
 }
-@media screen and (min-width:470px) and (max-width:601px) {
-  .sidebar {
-    width: 58%;
-  }
-} */

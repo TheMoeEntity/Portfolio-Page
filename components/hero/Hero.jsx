@@ -16,7 +16,9 @@ export const Hero = ({openSideBar,open}) => {
           <div className={open ? `${styles.animate} ${styles.bar}`:styles.bar}></div>
           <div className={open ? `${styles.animate} ${styles.bar}`:styles.bar}></div>
         </div>
-        <div className={styles.desc}>
+        <div style={{
+          opacity: open ? "0":"1"
+        }} className={styles.desc}>
             <motion.div
               initial={{y:'-100vh', opacity:0}}
               animate ={{y:0, opacity:1}}
