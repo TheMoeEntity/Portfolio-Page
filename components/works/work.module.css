@@ -1,14 +1,20 @@
 .works {
     min-width: 280px;
     min-height: 280px;
- 
     z-index: 20;
     position: relative;
+    /* box-shadow: 5px 9px 30px 0 rgb(0 0 0 / 20%); */
+
 }
+.works img {
+    -webkit-filter: drop-shadow(-5px 2px 4px rgb(0 0 0 / 50%));
+    filter: drop-shadow(-5px 2px 4px rgb(0 0 0 / 50%));  
+}
+
 
 .workdetails {
     transition: 0.4s;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
     position: absolute;
     top: 0;
     left: 0;
@@ -17,6 +23,13 @@
     z-index: 9;
     cursor: pointer;
     opacity: 0;
+    color: #f2f3f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    line-height: 200%;
 }
 .workdetails:hover {
     opacity: 1;
