@@ -11,8 +11,6 @@ const assets = [
   './Images/me2.PNG'
 ]
 
-
-
 export const Hero = ({openSideBar,open}) => {
 
   const screenSize = useScreenWidth()
@@ -23,12 +21,12 @@ export const Hero = ({openSideBar,open}) => {
   
   useEffect(()=> {
    
-      const interval = setInterval(() => {
-        setCounter(val => {
-          return val >= 2 ? 0 : val+1
-        })
-      }, 7000);
-      return () => clearInterval(interval);
+      // const interval = setInterval(() => {
+      //   setCounter(val => {
+      //     return val >= 2 ? 0 : val+1
+      //   })
+      // }, 7000);
+      // return () => clearInterval(interval);
 
   },[])
 

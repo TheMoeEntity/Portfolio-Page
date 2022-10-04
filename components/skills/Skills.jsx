@@ -2,6 +2,11 @@ import Image from "next/image"
 import styles from './Skills.module.css'
 import { useState } from "react"
 import { Card } from "../cards/Card"
+import { useInView } from "react-intersection-observer"
+import { useEffect } from "react"
+import { motion } from "framer-motion"
+import { useAnimation } from "framer-motion"
+import { useRef } from "react"
 
 export const Skills = () => {
 
@@ -84,10 +89,54 @@ export const Skills = () => {
     }
   ]
 
+  const {ref, inView} = useInView()
+  const animation = useAnimation()
+  const [AboutCounter,setAboutCounter] = useState(0)
+  const animationEnd = () => {
+        
+    setAboutCounter(counter => counter + 1)
+    animation.start({
+      x:"-90vw"
+  }) 
+  }
+
+  useEffect(()=> {
+
+    if (inView) {
+      animation.start({
+          x:0,
+          opacity:1,
+          transition: {
+            duration: 1,
+            delay:0.4
+          }
+      })
+
+    } 
+    
+    if (!inView) {
+      if (AboutCounter >= 1) {
+          return
+      }
+      animationEnd()
+    }
+  },[inView])
+
+  useEffect(()=> {
+    window.addEventListener('scroll', ()=> {
+
+    })
+  },[])
+
   return (
     <div>
+
+      <div ref={ref}>
+      <motion.div animate={animation}>
         <h5>MY SKILL SET</h5>
         <h3>WHAT ARE MY SKILLS?</h3> <br />
+      </motion.div>
+      </div>
         <p>
         Every soldier needs weapons in his arsenal right? At the moment I am well versed in the big three: JavaScript, HTML, CSS. The MERN (MongoDB, ExpressJs, React, NodeJs). NextJs, Svelte, SvelteKit, Firebase and Swift. 
         I am currently learning React Native because I love iOS ({`who doesn't ?`})
@@ -107,7 +156,6 @@ export const Skills = () => {
 
           {
             moreSkills.map((item,key)=> (
-              
               <div key={key}>
               <h4>{item.name}</h4>
               <div className={styles.more}>
@@ -116,6 +164,7 @@ export const Skills = () => {
                 }} className={styles.width}></div>
               </div>
             </div>
+              
             ))
           }
 

@@ -78,10 +78,10 @@ export const About = () => {
               scale:1,
               opacity:1,
               transition: {
-                duration: 1,
-                delay:0.5,
+                duration: 0.8,
+                delay:0.8,
                 type:'spring',
-                bounce:0.4
+                bounce:0.5
               }
           })
 
@@ -95,7 +95,6 @@ export const About = () => {
           }) 
         }
       },[offerInView])
-
 
 
   return (
@@ -129,7 +128,7 @@ export const About = () => {
         </div>
         </motion.div>
         </div>
-      
+        <span></span>
 
     </div>
   )
