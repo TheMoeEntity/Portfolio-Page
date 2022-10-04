@@ -107,7 +107,7 @@ export const Skills = () => {
           x:0,
           opacity:1,
           transition: {
-            duration: 1,
+            duration: 0.7,
             delay:0.4
           }
       })
@@ -122,11 +122,30 @@ export const Skills = () => {
     }
   },[inView])
 
+  const container = useRef(null)
+
   useEffect(()=> {
     window.addEventListener('scroll', ()=> {
-
+        animateIn()
     })
   },[])
+
+  const animateIn = ()=> {
+    let widths = container.current.children
+    let height = window.innerHeight
+    for (const child of widths) {
+
+        let width = child.children[1].children[0]
+        let revealTop = width.getBoundingClientRect().top;
+        let revealpoint = 120
+      
+        if (revealTop < height - revealpoint) {
+          width.classList.add(styles.addWidth)
+        } else {
+          width.classList.remove(styles.addWidth)
+        }
+    }
+  }
 
   return (
     <div>
@@ -152,7 +171,7 @@ export const Skills = () => {
 		      	<i aria-hidden="true"></i>
             <i aria-hidden="true"></i>
         </div>
-        <div className={styles.moreSkills}>
+        <div ref={container} className={styles.moreSkills}>
 
           {
             moreSkills.map((item,key)=> (
