@@ -29,7 +29,7 @@ export default function Home() {
           <SideBar close={()=> setSideBarOpen(false)} open={sideBarOpen} />
           
         <div style={{
-          marginLeft: sideBarOpen ? "75%":"0"
+          // marginLeft: sideBarOpen ? "75%":"0"
         }} className={styles.maincontent}> 
         
         <motion.div
@@ -53,7 +53,7 @@ export default function Home() {
             <Skills />
           </section>
           </div>
-          
+
           <Experience />
           <Works />
           <Footer />
