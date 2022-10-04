@@ -7,7 +7,7 @@ import whack from '../../public/Images/whack.png'
 
 export const Works = () => {
   return (
-    <section className={styles.about}>
+    <section id='projects' className={styles.about}>
     <h5>PROJECTS</h5>
     <h3>SOME OF MY RECENT WORKS?</h3> <br />
     <p>

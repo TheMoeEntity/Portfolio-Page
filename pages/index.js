@@ -26,11 +26,12 @@ export default function Home() {
       </Head>
 
       <div className={styles.main}>
-          <SideBar open={sideBarOpen} />
+          <SideBar close={()=> setSideBarOpen(false)} open={sideBarOpen} />
           
         <div style={{
           marginLeft: sideBarOpen ? "75%":"0"
         }} className={styles.maincontent}> 
+        
         <motion.div
         initial={{x:'-100vw'}}
         animate ={{x:0}}
@@ -47,9 +48,12 @@ export default function Home() {
               <About />
           </section>
           <Partners />
+          <div id='skill'>
           <section className={styles.about}>
             <Skills />
           </section>
+          </div>
+          
           <Experience />
           <Works />
           <Footer />

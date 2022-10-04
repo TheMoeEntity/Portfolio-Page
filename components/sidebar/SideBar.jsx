@@ -5,7 +5,34 @@ import profile from '../../public/Images/me2.PNG'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-export const SideBar = ({open}) => {
+export const SideBar = ({open,close}) => {
+
+  const links = [
+    {
+      title: "HOME",
+      href: "/"
+    },
+    {
+      title: "ABOUT",
+      href: "#about"
+    },
+    {
+      title: "SERVICES",
+      href: "#services"
+    },
+    {
+      title: "SKILLS",
+      href: "#skill"
+    },
+    {
+      title: "PROJECTS",
+      href: "#projects"
+    },
+    {
+      title: "CONTACT",
+      href: "#contact"
+    }
+  ]
   return (
 
    <div style={
@@ -57,12 +84,12 @@ export const SideBar = ({open}) => {
         <div className={styles.navLinks}>
           <div className={styles.centered}>
             <ul>
-              <Link href="/"><li>HOME</li></Link>
-              <Link href="#about"><li>ABOUT</li></Link>
-              <Link href="#services"><li>SERVICES</li></Link>
-              <Link href="#skills"><li>SKILLS</li></Link>
-              <Link href="#projects"><li>PROJECTS</li></Link>
-              <Link href="#contact"><li>CONTACT</li></Link>
+              {
+                links.map((item,key)=> (
+                  <Link key={key} href={item.href}><li onClick={close}>{item.title}</li></Link>
+                ))
+              }
+
             </ul>
           </div>
           <div className={styles.copyright}>

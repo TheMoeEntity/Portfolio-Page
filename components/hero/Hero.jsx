@@ -89,7 +89,7 @@ export const Hero = ({openSideBar,open}) => {
             <h3>{counter === 0 ? `I create websites! ain't that cool?`:
                   counter === 1 ? "I make web apps" :
                         'I make iOS apps'}</h3>
-            <button>View portfolio</button>
+            <button>View Resume</button>
             </motion.div>
             
 

@@ -14,8 +14,11 @@
     object-fit: cover;
   }
 
+  #projects {
+    
+  }
   .hamburger {
-    position: absolute;
+    position: fixed !important;
     top: 20px;
     right: 10px;
     width: 50px;

@@ -93,7 +93,7 @@ export const Experience = () => {
 
 
   return (
-    <div ref={ref} className={`${styles.about} ${styles.experience}`}>
+    <section ref={ref} className={`${styles.about} ${styles.experience}`}>
         <h5>MY WORK EXPERIENCE</h5>
         <h3 >WHAT IS MY WORK EXPERIENCE?</h3> <br />
         
@@ -133,6 +133,6 @@ export const Experience = () => {
         </div>        
         </motion.div>
         </span>
-    </div>
+    </section>
   )
 }
