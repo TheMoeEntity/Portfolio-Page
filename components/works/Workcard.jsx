@@ -8,7 +8,7 @@ export const Workcard = ({img,stacks,details}) => {
     const [didhover,setDidHover] = useState(false)
   return (
     <div className={styles.works}>
-        <Image objectFit='auto' src={img} layout="fill" />
+        <Image objectFit='cover' src={img} layout="fill" />
         <div className={styles.workdetails}>
             {details}
         </div>
