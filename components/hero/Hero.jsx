@@ -40,7 +40,7 @@ export const Hero = ({openSideBar,open}) => {
     }} className={styles.hero}>
         {/* <img width={"100%"} height={"100%"} src="/Images/devspace.jpeg" alt="dev space" /> */}
         <div className={styles.overlay}></div>
-        <div onClick={SideBar} className={styles.hamburger}>
+        <div onClick={SideBar} className={open ? `${styles.hamburger} ${styles.animate}`: styles.hamburger}>
           <div className={open ? `${styles.animate} ${styles.bar}`:styles.bar}></div>
           <div className={open ? `${styles.animate} ${styles.bar}`:styles.bar}></div>
           <div className={open ? `${styles.animate} ${styles.bar}`:styles.bar}></div>
