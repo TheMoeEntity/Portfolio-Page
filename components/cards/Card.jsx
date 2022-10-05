@@ -18,7 +18,7 @@ export const Card = ({name,classname,border,progress,width}) => {
     let height = window.innerHeight
     let width = container.current.children[2].children[0]
     let revealTop = width.getBoundingClientRect().top;
-    let revealpoint = 120
+    let revealpoint = 150
   
     if (revealTop < height - revealpoint) { 
       width.classList.add(styles.addWidth)

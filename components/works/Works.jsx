@@ -16,32 +16,38 @@ const workDetails = [
   {
     img:foodfun,
     stack: "NextJs | MongoDB | PayPal Support | React/Redux",
-    details: "An E-Commerce SPA for a food ordering company"
+    details: "An E-Commerce SPA for a food ordering company",
+    page: "zzcatering.vercel.app"
   },
   {
     img:fitness,
     stack: "HTML | CSS | JavaScript",
-    details: "A landing page for a fitness organization"
+    details: "A landing page for a fitness organization",
+    page: "zzfitness.netlify.app"
   },
   {
     img:match,
-    stack: "ReactJs | Firebase |DogsAPI",
-    details: "An engaging online memory game"
+    stack: "ReactJs | Firebase | DogsAPI",
+    details: "An engaging online memory game",
+    page: "card-match-moe.vercel.app"
   },
   {
     img:quotes,
     stack: "HTML | CSS | JavaScript | QuotesGarden API",
-    details: "A random Quotes generating web app"
+    details: "A random Quotes generating web app",
+    page:"moerandomquotes.netlify.app"
   },
   {
-    img:calculator,
-    stack: "SvelteJs | Progress Web App",
-    details: "A scientific calculator with PWA support"
+    img:room,
+    stack: "HTML | CSS | JavaScript",
+    details: "A cool landing page for a furniture company. Challenge by FrontEnd Mentor",
+    page: "roomhome-moe.netlify.app"
   },
   {
     img:todo2,
     stack: "SvelteJs",
-    details: "A todo list web application. Challenge by FrontEnd Mentor"
+    details: "A todo list web application. Challenge by FrontEnd Mentor",
+    page:"todoapp-pro.vercel.app"
   },
 
 ]
@@ -56,7 +62,7 @@ export const Works = () => {
     <div className={styles.worksContainer}>
       {
         workDetails.map((item,key)=> (
-          <Workcard key={key} img={item.img} stacks={item.stack} details={item.details} />
+          <Workcard page={item.page} key={key} img={item.img} stacks={item.stack} details={item.details} />
         ))
       }
     </div>

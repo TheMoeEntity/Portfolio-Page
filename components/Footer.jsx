@@ -2,6 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 import styles from '../styles/footer.module.css'
 import mainstyles from '../styles/Home.module.css'
+import { useInView } from "react-intersection-observer"
+import { useEffect, useRef } from "react"
+import { motion } from "framer-motion"
+import { useAnimation } from "framer-motion"
 
 export const Footer = () => {
 
@@ -12,6 +16,65 @@ export const Footer = () => {
 	}
 
 	const [statusMessage,setStatus] = useState("")
+	const {ref, inView} = useInView()
+
+	const ref1 = useRef(null)
+	const ref2 = useRef(null)
+
+	const animation = useAnimation()
+    
+      useEffect(()=> {
+
+        if (inView) {
+          animation.start({
+              x:0,
+              opacity:1,
+              transition: {
+                duration: 1,
+				delay:1,
+				type:'spring',
+				bounce:0.4
+              }
+          })
+
+        } 
+        
+        if (!inView) {
+		  animation.start({
+			x:"100vw"
+			}) 
+        }
+      },[inView])
+
+
+	  useEffect(()=> {
+		window.addEventListener('scroll',() => {
+			animateIn()
+		})
+	  },[])
+	
+	  const animateIn = ()=> {
+	   
+		let height = window.innerHeight
+		let first = ref1.current
+		let second = ref2.current
+		let revealTop = ref1.current.getBoundingClientRect().top;
+		let revealTop2= ref2.current.getBoundingClientRect().top;
+		let revealpoint = 150
+		
+
+		if (revealTop < height - revealpoint) { 
+			first.classList.add(styles.reveal)
+		} else {
+			first.classList.remove(styles.reveal)
+		}
+		if (revealTop2 < height - revealpoint) { 
+			second.classList.add(styles.reveal)
+		} else {
+			second.classList.remove(styles.reveal)
+		}
+	
+	  }
 
 
 	const handlesubmit = e => {
@@ -87,24 +150,27 @@ export const Footer = () => {
   return (
 
 		<>
-		<section className={mainstyles.about}>
+		<section ref={ref} className={mainstyles.about}>
               <h5>CONTACTS</h5>
-              <h3>GET IN TOUCH WITH ME!</h3> <br />
+              <h3 >GET IN TOUCH WITH ME!</h3> <br />
               <p id='contact'>
                 {`Thank you for going through my page. Got a project you'd like me on? do reach out to me let's get you up and running. You could also buy me coffee
                 or just say hello. I am active on my socials, you may reach via any of them. `}
               </p> <br />
-              <div className={mainstyles.socials}>
+			  <motion.div animate={animation}>
+			  <div className={mainstyles.socials}>
                   <a target={`_blank`} rel="noopener noreferrer" href="https://twitter.com/NMoses_"><i className='fa-brands fa-twitter'></i></a>
                   <a target={`_blank`} rel="noopener noreferrer" href="https://instagram.com/NC_Moses"><i className='fa-brands fa-instagram'></i></a>
                   <a target={`_blank`} rel="noopener noreferrer" href="https://wa.me/+2348075489362"><i className='fa-brands fa-whatsapp'></i></a>
                   <a target={`_blank`} rel="noopener noreferrer" href="https://github.com/TheMoeEntity"><i className='fa-brands fa-github'></i></a>
                   <a target={`_blank`} rel="noopener noreferrer" href="https://web.facebook.com/Moses.Nwigberi/"><i className='fa-brands fa-facebook'></i></a>
               </div>
+            </motion.div>
+
 		</section>
 		<section id={styles.footer}>
             
-			<div className={styles.first}>
+			<div ref={ref1} className={styles.first}>
                 <div>
                     <span className={styles.zzlogo}>
                     <h2>ZZ</h2>
@@ -151,7 +217,7 @@ export const Footer = () => {
                 </div>
             </div>
             
-            <div>
+            <div ref={ref2}>
                 <h2>Inquire/Contact me</h2>
                 Reach out for a project or just say Hi
                 <form onSubmit={handlesubmit}>

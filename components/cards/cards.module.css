@@ -9,7 +9,7 @@
     flex-flow: column wrap;
     position: relative;
     max-width: 550px;
-    transition: 0.5s;
+    transition: 0.65s;
     overflow: hidden;
 
 }
