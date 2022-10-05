@@ -5,7 +5,7 @@ import { useState } from 'react'
 import foodfun from '../../public/Images/foodfun.png'
 
 export const Workcard = ({img,stacks,details}) => {
-    const [didhover,setDidHover] = useState(false)
+    
   return (
     <div className={styles.works}>
         <Image objectFit='cover' src={img} layout="fill" />
