@@ -56,7 +56,7 @@ export const Works = () => {
     <div className={styles.worksContainer}>
       {
         workDetails.map((item,key)=> (
-          <Workcard img={item.img} stacks={item.stack} details={item.details} />
+          <Workcard key={key} img={item.img} stacks={item.stack} details={item.details} />
         ))
       }
     </div>
