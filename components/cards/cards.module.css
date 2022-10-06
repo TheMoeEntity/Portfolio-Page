@@ -42,3 +42,12 @@
 .addWidth {
     left:0;
 }
+@media (prefers-color-scheme: dark) {
+    .card {
+        background-color: #0b0b0b;
+        box-shadow: 5px 4px 5px 0 rgba(130, 130, 130, 0.2);
+    }
+    .bar {
+        background-color: #121212; 
+    }
+}

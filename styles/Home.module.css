@@ -295,3 +295,26 @@
     text-align: center;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .sidebarcontent {
+      background-color: #0b0b0b;
+      box-shadow: 5px 4px 5px 0 rgba(130, 130, 130, 0.2);
+  }
+  .more {
+      background-color: #000000; 
+  }
+  .caption h6 span {
+    color: #f2f3f7;
+  }
+  .bubble {
+    /* color: #000000; */
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .arrow i {
+    color:  rgba(0, 0, 0, 0.3);
+  }
+  .arrow {
+    left: -16px;
+    z-index: -1 !important;
+  }
+}

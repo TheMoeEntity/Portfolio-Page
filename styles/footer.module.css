@@ -176,3 +176,25 @@
         background-repeat: repeat;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    #footer > div:nth-child(2),
+    #footer > div:nth-child(2) form button, #footer > div:nth-child(1) button,
+     #footer > div:nth-child(2) form input, #footer > div:nth-child(2) form textarea {
+        border: 1px solid #f2f3f7;
+        color: #f2f3f7;
+    }
+    #footer > div:nth-child(2) form input {
+        color:#f2f3f7;
+    }
+    #footer > div:nth-child(1) > div:nth-child(1), #footer > div:nth-child(1) > div:nth-child(2)  {
+        border-bottom: 1px solid #f2f3f7;
+    }
+
+    .zzlogo span {
+        color: rgba(0, 0, 0, 0.8);
+        background-color: #f2f3f7;
+        padding: 9px;
+    }
+    
+}
