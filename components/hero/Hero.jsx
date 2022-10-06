@@ -3,7 +3,8 @@ import styles from './Hero.module.css'
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { useScreenWidth } from "../../pages/api/hello"
-// import resume from '../../public/Docs/resume.pdf'
+import Link from "next/link"
+
 
 
 const assets = [
@@ -90,7 +91,16 @@ export const Hero = ({openSideBar,open}) => {
             <h3>{counter === 0 ? `I create websites! ain't that cool?`:
                   counter === 1 ? "I make web apps" :
                         'I make iOS apps'}</h3>
-            <button><a href="./Docs/resume.pdf">View Resume</a></button>
+            <button>
+      
+              <a
+              href="./assets/Resume.pdf"
+              target="_blank"
+            >
+              View Resume
+            </a>
+            </button>
+            
             </motion.div>
             
 
