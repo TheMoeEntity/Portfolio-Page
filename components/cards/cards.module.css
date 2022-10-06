@@ -45,7 +45,7 @@
 @media (prefers-color-scheme: dark) {
     .card {
         background-color: #0b0b0b;
-        box-shadow: 5px 4px 5px 0 rgba(130, 130, 130, 0.2);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.7);
     }
     .bar {
         background-color: #121212; 
