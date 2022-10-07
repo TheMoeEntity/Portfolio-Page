@@ -18,7 +18,15 @@
   scrollbar-color: black;
   transition: 1s;
   background-color: #f2f3f7;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;
 
+}
+.sidebar::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+.sidebarcontent::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 .maincontent {
@@ -36,6 +44,8 @@
   max-width: 100%;
   scrollbar-color: black;
   overflow: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;
 }
 
 .profile {
