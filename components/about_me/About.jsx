@@ -29,7 +29,7 @@ export const About = () => {
         },
         {
           icon: "fa-solid fa-database",
-          name: "SEO Optimization",
+          name: "SE Optimization",
           color: "rgba(0, 0, 0, 0.6)"
         }
     

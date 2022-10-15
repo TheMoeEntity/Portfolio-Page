@@ -27,7 +27,7 @@ export const Skills = () => {
           icon: "fa-brands fa-react",
           name: "React",
           color: "rgba(0, 0, 0, 0.6)",
-          width:"75%"
+          width:"80%"
         },
         {
           icon: "fa-brands fa-css3",
@@ -39,7 +39,7 @@ export const Skills = () => {
           icon: "fa-brands fa-node-js",
           name: "Node js",
           color: "rgba(0, 0, 0, 0.6)",
-          width:"50%"
+          width:"60%"
         },
         {
           icon: "fa-brands fa-swift",
@@ -57,18 +57,18 @@ export const Skills = () => {
           icon: "fa-brands fa-github",
           name: "git/github",
           color: "rgba(0, 0, 0, 0.6)",
-          width:"50%"
+          width:"70%"
         },
   ]
 
   const moreSkills = [
     {
       name: "Nextjs",
-      width: "90%"
+      width: "94%"
     },
     {
       name: "MongoDB",
-      width: "70%"
+      width: "75%"
     },
 
     {
@@ -86,8 +86,25 @@ export const Skills = () => {
     {
       name: "Express",
       width: "60%"
+    },
+    {
+      name: "Vercel",
+      width:"90%"
+    },
+    {
+      name: "Postman",
+      width:"90%"
+    },
+    {
+      name: "Netlify",
+      width:"90%"
+    },
+    {
+      name: "VS Code",
+      width:"95%"
     }
   ]
+
 
   const {ref, inView} = useInView()
   const animation = useAnimation()
