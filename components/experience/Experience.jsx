@@ -93,9 +93,9 @@ export const Experience = () => {
 
 
   return (
-    <section ref={ref} className={`${styles.about} ${styles.experience}`}>
+    <section className={`${styles.about} ${styles.experience}`}>
         <h5>MY WORK EXPERIENCE</h5>
-        <h3 >WHAT IS MY WORK EXPERIENCE?</h3> <br />
+        <h3 ref={ref}>WHAT IS MY WORK EXPERIENCE?</h3> <br />
         
 
         <motion.div animate={animation}>
