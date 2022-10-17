@@ -39,7 +39,7 @@ export const Skills = () => {
           icon: "fa-brands fa-node-js",
           name: "Node js",
           color: "rgba(0, 0, 0, 0.6)",
-          width:"60%"
+          width:"70%"
         },
         {
           icon: "fa-brands fa-swift",

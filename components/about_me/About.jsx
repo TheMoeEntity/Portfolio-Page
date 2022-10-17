@@ -108,10 +108,11 @@ export const About = () => {
     </motion.div>
       
         <p>
-          Hi, bet you already know this, but <b>my name is Moses Chukwudi Nwigberi</b>. I identify as an entry level, junior front end web developer
-            with good interest in iOS. Leveraging the latest web technologies, I create single page web applications, properly responsive, functional and SEO optimized websites. Hey, I am for the most part a front end developer but, I can integrate with a backend if needed, creating a full stack website on request😉. I create front IOS applications with Swift too.
-            <br /> <br />
-            At the moment, I am a 300L student of Chemical Engineering in the University of Lagos, Akoka. My hobbies include coding(duh), web development(obviously), mobile development(lol😂) and FIFA. I am also pretty decent in french language( ola amigo!)
+          Hi, bet you already know this, but <b>my name is Moses Chukwudi Nwigberi</b> and I enjoy creating things that live on the internet. I am a front end web developer with
+            good interest in iOS development. Leveraging the latest web technologies, I create single page web applications, properly responsive, functional SE optimized websites. <br /><br />
+            "Okay, we get it, he's a frontend web developer, he loves CSS and transitions. Not Impressed 😠! Can he make me a fully functional website and connect my APIs and all that backend stuff" ? Of course, I am comfortable with backend technologies. I can create fullstack applications too, powering your website with Node JS. I enjoy working with Swift so I know a thing or two about front IOS development.
+            <br/><br/>
+            At the moment, I am a 300L student of Chemical Engineering in the prestigious University of Lagos, Akoka. My hobbies include coding(duh), web development(obviously), mobile development(lol😂) and FIFA. I am also pretty decent in french language( Bonjour! again)
         </p> <br />
 
         <div ref={offerRef}>

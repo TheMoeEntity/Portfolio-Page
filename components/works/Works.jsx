@@ -32,10 +32,10 @@ const workDetails = [
     page: "card-match-moe.vercel.app"
   },
   {
-    img:quotes,
-    stack: "HTML | CSS | JavaScript | QuotesGarden API",
-    details: "A random Quotes generating web app",
-    page:"moerandomquotes.netlify.app"
+    img:calculator,
+    stack: "HTML | CSS | JavaScript | Bootstrap | PWA Support",
+    details: "An installable calculator web application with PWA support",
+    page:"zzcalculatorapp.netlify.app"
   },
   {
     img:room,
