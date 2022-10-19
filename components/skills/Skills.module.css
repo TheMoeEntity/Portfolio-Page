@@ -52,6 +52,7 @@
     }
     .classesContainer > div {
       flex: 100% !important;
+      margin-top: 40px;
     }
     .classesContainer > i {
       flex: 20%;
