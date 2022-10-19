@@ -9,7 +9,7 @@ import todo from '../../public/Images/todo.png'
 import todo2 from '../../public/Images/todo2.png'
 import match from '../../public/Images/cardmatch.png'
 import match2 from '../../public/Images/cardmatch2.png'
-import quotes from '../../public/Images/quotes.png'
+import stores from '../../public/Images/Apple-store.png'
 
 
 const workDetails = [
@@ -43,11 +43,17 @@ const workDetails = [
     details: "A cool landing page for a furniture company. Challenge by FrontEnd Mentor",
     page: "roomhome-moe.netlify.app"
   },
+  // {
+  //   img:todo2,
+  //   stack: "SvelteJs",
+  //   details: "A todo list web application. Challenge by FrontEnd Mentor",
+  //   page:"todoapp-pro.vercel.app"
+  // },
   {
-    img:todo2,
-    stack: "SvelteJs",
-    details: "A todo list web application. Challenge by FrontEnd Mentor",
-    page:"todoapp-pro.vercel.app"
+    img:stores,
+    stack: "NextJs | Cookies | JSON server | PWA support | Next-auth",
+    details: "An E-commerce store with group buying and referral links options. Still in development",
+    page: "https://moestores.vercel.app/"
   },
 
 ]
@@ -57,7 +63,7 @@ export const Works = () => {
     <h5>PROJECTS</h5>
     <h3>SOME OF MY RECENT WORKS?</h3> <br />
     <p>
-      Below are some of the projects I have worked on and or collaborated.
+      Below are some of the projects I have worked on.
     </p> <br />
     <div className={styles.worksContainer}>
       {
