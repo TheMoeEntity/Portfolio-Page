@@ -2,7 +2,7 @@
     width: 100%;
     height: 600px;
     position: relative;
-    background: url('../../public/Images/devspace.jpeg');
+    background: url('../../public/Images/vector.JPG');
     background-repeat: no-repeat !important;
     background-size: cover !important;
     transition:all 1s ease;
@@ -71,7 +71,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .desc {
     position: absolute;
@@ -82,7 +82,7 @@
   
   }
   .desc h1 {
-    color: white;
+    color: rgb(227, 227, 227);
     font-size: 40px;
     margin:10px 0px;  
     font-weight: 400;

@@ -53,7 +53,7 @@ const workDetails = [
     img:stores,
     stack: "NextJs | Cookies | JSON server | PWA support | Next-auth",
     details: "An E-commerce store with group buying and referral links options. Still in development",
-    page: "https://moestores.vercel.app/"
+    page: "moestores.vercel.app/"
   },
 
 ]

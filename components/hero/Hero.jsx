@@ -8,7 +8,7 @@ import Link from "next/link"
 
 
 const assets = [
-  './Images/devspace.jpeg',
+  './Images/vector.JPG',
   './Images/smile.jpg',
   './Images/me2.PNG'
 ]
@@ -88,13 +88,13 @@ export const Hero = ({openSideBar,open}) => {
             <h1>{counter === 0 ? "I'm a Front End Web Developer.":
             counter ===1 ? "":"I'm a mobile developer"}</h1> <br />
 
-            <h3>{counter === 0 ? `I create websites! ain't that cool?`:
+            <h3>{counter === 0 ? `I make web apps! ain't that cool?`:
                   counter === 1 ? "I make web apps" :
                         'I make iOS apps'}</h3>
             <button>
       
               <a
-              href="./assets/Resume.pdf"
+              href="./assets/resume2.pdf"
               target="_blank"
             >
               View Resume
