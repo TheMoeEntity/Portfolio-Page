@@ -35,8 +35,8 @@ export const Hero = ({ openSideBar, open }) => {
   useEffect(() => {
   }, [counter])
 
-  const carousel = ()=> {
-    
+  const carousel = () => {
+
   }
 
   return (
