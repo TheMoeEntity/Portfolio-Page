@@ -33,8 +33,11 @@ export const Hero = ({ openSideBar, open }) => {
   }, [])
 
   useEffect(() => {
-
   }, [counter])
+
+  const carousel = ()=> {
+    
+  }
 
   return (
     <div className={styles.hero}>
