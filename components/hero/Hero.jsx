@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { useScreenWidth } from "../../pages/api/hello"
 import Link from "next/link"
-import vector from '../../public/Images/vector.JPG'
+import vector from '../../public/Images/vector2.JPG'
 
 
 
@@ -38,7 +38,7 @@ export const Hero = ({ openSideBar, open }) => {
 
   return (
     <div className={styles.hero}>
-      <Image layout="fill" src={vector} alt="Hero image" />
+      <Image layout="fill" priority src={vector} alt="Hero image" />
       <div className={styles.overlay}></div>
       <div onClick={SideBar} className={open ? `${styles.hamburger} ${styles.animate}` : styles.hamburger}>
         <div className={open ? `${styles.animate} ${styles.bar}` : styles.bar}></div>
