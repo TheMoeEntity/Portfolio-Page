@@ -50,13 +50,15 @@ export const SideBar = ({open,close}) => {
   
     // Setup dark/light mode for the first time
     onSelectMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-  
+    
     // Remove listener
     return () => {
       window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
       });
     }
+    
   }, []);
+ 
   return (
 
    <div style={
@@ -90,7 +92,9 @@ export const SideBar = ({open,close}) => {
             <Image width="100%" priority layout='responsive' height="100%" src={profile} />
         </div>
         <div className={styles.switch}>
-          <i className="fa-solid fa-toggle-on"></i>
+          {
+            mode === "light" ? (<i className="fa-solid fa-toggle-on"></i>) :(<i className="fa-solid fa-toggle-off"></i>)
+          }
         </div>
         <div className={styles.caption}>
             <h3>Moses Nwigberi</h3>
