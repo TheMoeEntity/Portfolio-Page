@@ -2,11 +2,7 @@
   width: 100%;
   height: 600px;
   position: relative;
-  /* background: url('../../public/Images/vector.JPG');
-    background-repeat: no-repeat !important;
-    background-size: cover !important; */
   transition: all 1s ease;
-  /* background-position: center; */
 }
 
 .hero img {
@@ -14,8 +10,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-#projects {}
 
 .hamburger {
   position: fixed !important;
@@ -79,7 +73,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .desc {
@@ -87,7 +81,6 @@
   bottom: 10%;
   left: 10%;
   transition: 0.25s ease;
-
 
 }
 
