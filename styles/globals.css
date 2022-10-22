@@ -6,6 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     scroll-behavior: smooth;
     scrollbar-width: thin !important;
+  background-color: #fafafa !important;
 }
 .container {
   width: 100%;
@@ -32,7 +33,7 @@ a {
   }
   body {
     color: rgba(0, 0, 0, 0.7);
-    background: white;
+    background: #fafafa;
     height: 100vh;
   }
 }
@@ -46,7 +47,7 @@ img {
   }
   body {
     color: #f2f3f7;
-    background: #101010;
+    background: #0d1017;
     height: 100vh;
     transition: 1s;
   }
