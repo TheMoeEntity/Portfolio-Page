@@ -177,7 +177,7 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     #footer > div:nth-child(2),
     #footer > div:nth-child(2) form button, #footer > div:nth-child(1) button,
      #footer > div:nth-child(2) form input, #footer > div:nth-child(2) form textarea {
@@ -197,4 +197,4 @@
         padding: 9px;
     }
     
-}
+} */

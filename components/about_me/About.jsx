@@ -109,10 +109,9 @@ export const About = () => {
       
         <p>
           Hi, bet you already know this, but <b>my name is Moses Chukwudi Nwigberi</b> and I enjoy creating things that live on the internet. I am a front end web developer with
-            good interest in iOS development. Leveraging the latest web technologies, I create single page web applications(SPAs) and fully functional, responsive SE optimized websites. <br /><br />
-            "Okay, we get it, he's a frontend web developer, he loves CSS and transitions. Not Impressed 😠! Can he make me a fully functional website and connect my APIs and all that backend stuff" ? Of course, I am comfortable with backend technologies. I will create fullstack web applications for you, powered by Node JS, if you ask nicely :). Asides web, I enjoy working with Swift so I know a thing or two about IOS development.
+            good interest in iOS. Leveraging the latest web technologies, I design and code beautifully simple things and I love what I do.
             <br/><br/>
-            At the moment, I am a 300L student of Chemical Engineering in the prestigious University of Lagos, Akoka. {`My hobbies include: coding(duh), web development and mobile development(probably mentioned this 200 times)`}. I am outdoorsy, when I am not sitting in front of my Mac, squashing bugs and wondering why code I wrote yesterday {`isn't working now,`} I am most probably hanging outside with friends. I also enjoy scrolling through my Twitter timeline, Quora, Medium and of course, FIFA. My other preferred language asides JavaScript is french! I love french ( Bonjour! again lol)
+            I am a Chemical Engineering student in the prestigious University of Lagos, Nigeria. {`My hobbies include: writing code, creating web apps and mobile development(probably mentioned this 200 times)`}. I am outdoorsy, when I am not sitting in front of my Mac, squashing bugs and wondering why code I wrote yesterday {`isn't working now,`} I am most probably outdoors with friends and family or scrolling through my Twitter timeline, Quora and Medium.
         </p> <br />
 
         <div ref={offerRef}>

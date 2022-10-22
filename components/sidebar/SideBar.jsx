@@ -34,30 +34,6 @@ export const SideBar = ({open,close}) => {
       href: "#contact"
     }
   ]
-  const [mode, setMode] = useState('light');
-
-  const onSelectMode = (mode) => {
-    setMode(mode)
-    if (mode === 'dark')
-      document.body.classList.add('dark-mode')
-    else
-      document.body.classList.remove('dark-mode')
-  }
-
-  useEffect(() => {
-    // Add listener to update styles
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => onSelectMode(e.matches ? 'dark' : 'light'));
-  
-    // Setup dark/light mode for the first time
-    onSelectMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-    
-    // Remove listener
-    return () => {
-      window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
-      });
-    }
-    
-  }, []);
  
   return (
 
@@ -90,11 +66,6 @@ export const SideBar = ({open,close}) => {
         <div className={styles.profile}>
             {/* <Image objectFit='cover' layout='responsive' width="100%" priority height="100%" src={`/Images/me.png`} /> */}
             <Image width="100%" priority layout='responsive' height="100%" src={profile} />
-        </div>
-        <div className={styles.switch}>
-          {
-            mode === "light" ? (<i className="fa-solid fa-toggle-on"></i>) :(<i className="fa-solid fa-toggle-off"></i>)
-          }
         </div>
         <div className={styles.caption}>
             <h3>Moses Nwigberi</h3>

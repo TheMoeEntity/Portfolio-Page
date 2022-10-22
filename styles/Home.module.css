@@ -159,7 +159,7 @@
   width: 100%;
   padding: 0;
   height: 320px;
-  background: url("../public/Images/devspace2.jpeg");
+  background: url("../public/Images/vector3.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -200,7 +200,7 @@
 .partners div:nth-child(2) > span {
   flex: 15%;
   margin:30px;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,8 +218,8 @@
   font-size: 30px;
 }
 .partners div:nth-child(2) > span h4 {
-  font-weight:300;
-  font-size: 18px;
+  font-weight:500;
+  font-size: 16px;
 }
 .bubble {
     background-color: #f2f3f7;
@@ -317,35 +317,5 @@
     font-weight: 400;
     padding: 0 15px;
     text-align: center;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .sidebarcontent {
-      background-color: #0b0b0b;
-      box-shadow: 5px 4px 5px 0 rgba(130, 130, 130, 0.2);
-  }
-  .sidebarcontent.dark {
-    background-color: #0b0b0b;
-    box-shadow: 5px 4px 5px 0 rgba(130, 130, 130, 0.2);
-  }
-  .sidebar {
-    background-color: #000000;
-  }
-  .more {
-      background-color: #000000; 
-  }
-  .caption h6 span {
-    color: #f2f3f7;
-  }
-  .bubble {
-    /* color: #000000; */
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .arrow i {
-    color:  rgba(0, 0, 0, 0.3);
-  }
-  .arrow {
-    left: -16px;
-    z-index: -1 !important;
   }
 }

@@ -7,11 +7,11 @@ export const Partners = () => {
     <div>
       <span>
         <i className='fa-solid fa-list-check'></i>
-        <h4>{`Projects: 4`}</h4> 
+        <h4>{`Projects: 7`}</h4> 
       </span>
       <span>
       <i className='fa-solid fa-kitchen-set'></i>
-      <h4>{`Skills: 7`}</h4>
+      <h4>{`Skills: 13`}</h4>
       </span>
       <span>
       <i className='fa-solid fa-handshake'></i>
@@ -19,7 +19,7 @@ export const Partners = () => {
       </span>
       <span>
       <i className='fa-solid fa-briefcase'></i>
-      <h4>{`Portfolio: 11 `}</h4>
+      <h4>{`Portfolio: 10+ `}</h4>
       </span>
     </div>
     </section>
