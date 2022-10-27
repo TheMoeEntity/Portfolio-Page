@@ -230,6 +230,10 @@
     margin-bottom: 40px;
     
 }
+.bubble a {
+  font-weight: bolder;
+  color: #2c98f0;
+} 
 .bubble h4 {
   font-size: 18px;
   margin-bottom: 20px;

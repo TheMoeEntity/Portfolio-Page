@@ -109,9 +109,9 @@ export const About = () => {
       
         <p>
           Hi, bet you already know this, but <b>my name is Moses Chukwudi Nwigberi</b> and I enjoy creating things that live on the internet. I am a front end web developer with
-            good interest in iOS. Leveraging the latest web technologies, I design and code beautifully simple things and I love what I do.
+            good interest in iOS. Leveraging the latest web technologies, I design and code beautifully simple things and I love what I do. Check out some of my work in the Projects section.
             <br/><br/>
-            I am a Chemical Engineering student in the prestigious University of Lagos, Nigeria. {`My hobbies include: writing code, creating web apps and mobile development(probably mentioned this 200 times)`}. I am outdoorsy, when I am not sitting in front of my Mac, squashing bugs and wondering why code I wrote yesterday {`isn't working now,`} I am most probably outdoors with friends and family or scrolling through my Twitter timeline, Quora and Medium.
+           As a web developer, I love writing code, creating front end and full stack web apps and of course, mobile development(probably mentioned this 200 times). I am outdoorsy, when I am not sitting in front of my Mac, squashing bugs and wondering why the code I wrote yesterday {`isn't working now,`} I am most probably outdoors with friends and family or scrolling through my Twitter timeline, Quora and Medium.
         </p> <br />
 
         <div ref={offerRef}>

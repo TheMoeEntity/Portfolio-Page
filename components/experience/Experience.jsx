@@ -100,21 +100,25 @@ export const Experience = () => {
 
         <motion.div animate={animation}>
         <div className={styles.bubble}>
-          <h4>Junior developer/intern at ZZDIGITAL (2020-2021) </h4>
+          <h4>Developer/intern at ZZDIGITAL (2020-2021) </h4>
           <ul>
-          <li>Satisfactorily created functional static websites for clients</li>
+          <li>Satisfactorily created multiple functional static websites for clients</li>
           <li>Worked on and updated web user interfaces according to demands</li>
-          <li>{`Collaborated with the iOS and Design teams turning client's designs to functional User Interfaces and developing the front end 
-              of a mobile software project with Swift.`}
+          <li>{`Collaborated with the design team and senior iOS developer developing the front end of Yachtingly, a Yacht ordering mobile app. `}
           </li>
           <li>Learned Swift on the job</li>
-          <li>{`Developed the front end of a reputable Health oragnization's website`}</li>
-          <li> Worked on the front end of web applications</li>
+          <li>Worked with a team and revamped <a href="https://dovehospital.com">dovehospital.com</a>, a reputable Hospital in Lekki</li>
+          <li>  
+            <a
+              href="./images/Moses.png"
+              target="_blank"
+            >
+              View Resume
+            </a></li>
           
           </ul>
           <div className={styles.arrow}>
               <i className='fa-solid fa-caret-left'></i>
-              
           </div>
         </div>
         </motion.div>
@@ -122,13 +126,13 @@ export const Experience = () => {
         <span ref={ref2}>
         <motion.div animate={animation2}>
         <div className={styles.bubble}>
-        <h4>Freelance (now)</h4>
+        <h4>Freelancing (now)</h4>
         <ul>
-        <li>Currently open to job opportunities and freelancing</li>
+        <li>Currently open to Job opportunities where I can contribute, learn and grow.</li>
+        <li>Creating personal web projects with NextJs</li>
         </ul>
         <div className={styles.arrow}>
             <i className='fa-solid fa-caret-left'></i>
-            
         </div>
         </div>        
         </motion.div>
