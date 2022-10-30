@@ -110,7 +110,7 @@ export const Experience = () => {
           <li>Worked with a team and revamped <a href="https://dovehospital.com">dovehospital.com</a>, a reputable Hospital in Lekki</li>
           <li>  
             <a
-              href="./images/Moses.png"
+              href="./Images/Moses.png"
               target="_blank"
             >
               View Resume

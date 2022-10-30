@@ -95,7 +95,7 @@ export const Hero = ({ openSideBar, open }) => {
           <button>
 
             <a
-              href="./assets/resume2.pdf"
+              href="./Images/Moses.png"
               target="_blank"
             >
               View Resume
