@@ -27,11 +27,11 @@ export const About = () => {
           name: "Web Applications",
           color: "red"
         },
-        {
-          icon: "fa-solid fa-database",
-          name: "SE Optimization",
-          color: "rgba(0, 0, 0, 0.6)"
-        }
+        // {
+        //   icon: "fa-solid fa-database",
+        //   name: "Responsive Web Design",
+        //   color: "rgba(0, 0, 0, 0.6)"
+        // }
     
     
       ])
@@ -111,7 +111,7 @@ export const About = () => {
           Hi, bet you already know this, but <b>my name is Moses Chukwudi Nwigberi</b> and I enjoy creating things that live on the internet. I am a front end web developer with
             good interest in iOS. Leveraging the latest web technologies, I design and code beautifully simple things and I love what I do. Check out some of my work in the Projects section.
             <br/><br/>
-           As a web developer, I love writing code, creating front end and full stack web apps and of course, mobile development(probably mentioned this 200 times). I am outdoorsy, when I am not sitting in front of my Mac, squashing bugs and wondering why the code I wrote yesterday {`isn't working now,`} I am most probably outdoors with friends and family or scrolling through my Twitter timeline, Quora and Medium.
+           As a web developer, I love writing code, creating front end and full stack web apps, and of course, mobile development(probably mentioned this 200 times). I am outdoorsy, when I am not sitting in front of my Mac, squashing bugs and wondering why the code I wrote yesterday {`isn't working now,`} I am most probably with friends and family or scrolling through my Twitter timeline, Quora or reading dev news on Medium.
         </p> <br />
 
         <div ref={offerRef}>
