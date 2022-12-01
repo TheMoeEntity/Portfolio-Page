@@ -41,6 +41,7 @@
     height: 30%;
     background-color: rgba(0,0,0,0.5);
     color: whitesmoke;
+    padding-bottom: 15px;
 }
 .details ul li {
     display: inline;

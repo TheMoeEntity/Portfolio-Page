@@ -8,22 +8,22 @@ import room from '../../public/Images/room.png'
 import todo from '../../public/Images/todo.png'
 import todo2 from '../../public/Images/todo2.png'
 import match from '../../public/Images/cardmatch.png'
-import match2 from '../../public/Images/cardmatch2.png'
+import restoran from '../../public/Images/restoran.png'
 import stores from '../../public/Images/Apple-store.png'
 
 
 const workDetails = [
   {
     img:foodfun,
-    stack: "NextJs | MongoDB | PayPal Support | React/Redux",
+    stack: "NextJs | MongoDB | PayPal Support | React/Redux | Framer",
     details: "An E-Commerce SPA for a food ordering company",
     page: "zzcatering.vercel.app"
   },
   {
-    img:fitness,
-    stack: "HTML | CSS | JavaScript",
-    details: "A landing page for a fitness organization",
-    page: "zzfitness.netlify.app"
+    img:restoran,
+    stack: "NextJs | Framer Motion",
+    details: "A landing page for a Restaurant",
+    page: "zzfoods.vercel.app"
   },
   {
     img:match,
@@ -37,18 +37,18 @@ const workDetails = [
     details: "An installable calculator web application with PWA support",
     page:"zzcalculatorapp.netlify.app"
   },
-  {
-    img:room,
-    stack: "HTML | CSS | JavaScript",
-    details: "A cool landing page for a furniture company. Challenge by FrontEnd Mentor",
-    page: "roomhome-moe.netlify.app"
-  },
   // {
-  //   img:todo2,
-  //   stack: "SvelteJs",
-  //   details: "A todo list web application. Challenge by FrontEnd Mentor",
-  //   page:"todoapp-pro.vercel.app"
+  //   img:room,
+  //   stack: "HTML | CSS | JavaScript",
+  //   details: "A cool landing page for a furniture company. Challenge by FrontEnd Mentor",
+  //   page: "roomhome-moe.netlify.app"
   // },
+  {
+    img:todo2,
+    stack: "SvelteJs",
+    details: "A todo list web application. Challenge by FrontEnd Mentor",
+    page:"todoapp-pro.vercel.app"
+  },
   {
     img:stores,
     stack: "NextJs | Cookies | JSON server | PWA support | Next-auth",
