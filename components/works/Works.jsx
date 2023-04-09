@@ -14,16 +14,22 @@ import stores from '../../public/Images/Apple-store.png'
 
 const workDetails = [
   {
-    img:foodfun,
-    stack: "NextJs | MongoDB | PayPal Support | React/Redux | Framer",
-    details: "An E-Commerce SPA for a food ordering company",
-    page: "zzcatering.vercel.app"
+    img:stores,
+    stack: "NextJs | Cookies | Sanity CMS | Paypal | Redux | JWT-auth",
+    details: "An E-commerce store with group buying, cart system, referral links options and more.",
+    page: "moestores.vercel.app"
   },
   {
     img:restoran,
     stack: "NextJs | Framer Motion",
     details: "A landing page for a Restaurant",
     page: "zzfoods.vercel.app"
+  },
+  {
+    img:foodfun,
+    stack: "NextJs | MongoDB | PayPal Support | React/Redux | Framer",
+    details: "An E-Commerce SPA for a food ordering company",
+    page: "zzcatering.vercel.app"
   },
   {
     img:match,
@@ -49,12 +55,7 @@ const workDetails = [
     details: "A todo list web application. Challenge by FrontEnd Mentor",
     page:"todoapp-pro.vercel.app"
   },
-  {
-    img:stores,
-    stack: "NextJs | Cookies | JSON server | PWA support | Next-auth",
-    details: "An E-commerce store with group buying and referral links options. Still in development",
-    page: "moestores.vercel.app/"
-  },
+
 
 ]
 export const Works = () => {

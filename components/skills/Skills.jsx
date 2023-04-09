@@ -67,6 +67,10 @@ export const Skills = () => {
       width: "94%"
     },
     {
+      name: "Sanity CMS",
+      width: "60%"
+    },
+    {
       name: "MongoDB",
       width: "75%"
     },
