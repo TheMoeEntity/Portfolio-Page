@@ -15,7 +15,7 @@ import stores from '../../public/Images/Apple-store.png'
 const workDetails = [
   {
     img:stores,
-    stack: "NextJs | Cookies | Sanity CMS | Paypal | Redux | ContextApi | JWT-auth",
+    stack: "NextJs | Cookies | Sanity CMS | Paypal | Redux | ContextApi | JWT",
     details: "An E-commerce store with group buying, cart system, referral links options and more.",
     page: "moestores.vercel.app"
   },
