@@ -125,6 +125,7 @@ I believe that a great website or app is like a work of art that leaves a lastin
 So, grab your virtual sword and join me on this epic journey. {`Let's`} push the boundaries of {`what's`} possible and create digital wonders that will captivate hearts and minds.
 
 Welcome to my portfolio. Welcome to the world of limitless possibilities. {`Let's`} make some magic together! ✨
+</p>
 
         <div ref={offerRef}>
         <motion.div
