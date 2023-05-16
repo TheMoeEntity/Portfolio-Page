@@ -108,7 +108,7 @@ export const About = () => {
     </motion.div>
       
         <p>
-Hey there! Welcome to my world of pixels and code! {`I'm`} Moses, a frontend web developer with a burning passion for all things iOS and Swift. 🚀 <br />
+Hey there! Welcome to my world of pixels and code! {`I'm`} Moses, a frontend web developer with a burning passion for all things iOS and Swift. 🚀 <br /> <br />
 
 Picture this: a cup of steaming hot coffee, a keyboard covered in code snippets, and a wild imagination ready to transform ideas into digital reality. {`That's`} me in a nutshell!
 
