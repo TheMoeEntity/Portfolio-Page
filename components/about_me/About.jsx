@@ -108,11 +108,23 @@ export const About = () => {
     </motion.div>
       
         <p>
-          Hi, bet you already know this, but <b>my name is Moses Chukwudi Nwigberi</b> and I enjoy creating things that live on the internet. I am a front end web developer with
-            good interest in iOS. Leveraging the latest web technologies, I design and code beautifully simple things and I love what I do. Check out some of my work in the Projects section.
-            <br/><br/>
-           As a web developer, I love writing code, creating front end and full stack web apps, and of course, mobile development(probably mentioned this 200 times). I am outdoorsy, when I am not sitting in front of my Mac, squashing bugs and wondering why the code I wrote yesterday {`isn't working now,`} I am most probably with friends and family or scrolling through my Twitter timeline, Quora or reading dev news on Medium.
-        </p> <br />
+Hey there! Welcome to my world of pixels and code! I'm Moses, a frontend web developer with a burning passion for all things iOS and Swift. 🚀
+
+Picture this: a cup of steaming hot coffee, a keyboard covered in code snippets, and a wild imagination ready to transform ideas into digital reality. That's me in a nutshell!
+
+With a magical blend of creativity and technical wizardry, I've mastered the art of crafting beautiful and intuitive user interfaces. My fingertips dance across the keys, weaving lines of HTML, CSS, and JavaScript into mesmerizing web experiences.
+
+But my journey doesn't stop at the web. Oh no! I'm like a superhero with a dual identity. When the sun sets and the moon rises, I transform into an iOS enthusiast, delving deep into the world of app development and wielding the mighty Swift language.
+
+When you work with me, expect an extraordinary adventure. I'm your partner in turning dreams into digital marvels. From brainstorming mind-boggling concepts to bringing them to life, I've got you covered.
+
+My trusty companions on this quest are React, Next.js, and Svelte.js. Together, we form an unstoppable team, conquering the web with our exceptional powers. We create websites that not only look stunning but also provide a seamless and engaging experience for every visitor.
+
+I believe that a great website or app is like a work of art that leaves a lasting impression. It's a masterpiece that combines functionality and aesthetics, leaving users in awe and craving for more.
+
+So, grab your virtual sword and join me on this epic journey. Let's push the boundaries of what's possible and create digital wonders that will captivate hearts and minds.
+
+Welcome to my portfolio. Welcome to the world of limitless possibilities. Let's make some magic together! ✨
 
         <div ref={offerRef}>
         <motion.div
