@@ -108,17 +108,17 @@ export const About = () => {
     </motion.div>
       
         <p>
-Hey there! Welcome to my world of pixels and code! {`I'm`} Moses, a frontend web developer with a burning passion for all things iOS and Swift. 🚀
+Hey there! Welcome to my world of pixels and code! {`I'm`} Moses, a frontend web developer with a burning passion for all things iOS and Swift. 🚀 <br />
 
 Picture this: a cup of steaming hot coffee, a keyboard covered in code snippets, and a wild imagination ready to transform ideas into digital reality. {`That's`} me in a nutshell!
 
 With a magical blend of creativity and technical wizardry, {`I've`} mastered the art of crafting beautiful and intuitive user interfaces. My fingertips dance across the keys, weaving lines of HTML, CSS, and JavaScript into mesmerizing web experiences.
 
-But my journey doesn't stop at the web. Oh no! {`I am`} like a superhero with a dual identity. When the sun sets and the moon rises, I transform into an iOS enthusiast, delving deep into the world of app development and wielding the mighty Swift language.
+But my journey doesn't stop at the web. Oh no! {`I am`} like a superhero with a dual identity. When the sun sets and the moon rises, I transform into an iOS enthusiast, delving deep into the world of app development and wielding the mighty Swift language. <br /> <br />
 
 When you work with me, expect an extraordinary adventure. {`I'm`} your partner in turning dreams into digital marvels. From brainstorming mind-boggling concepts to bringing them to life, {`I've`} got you covered.
 
-My trusty companions on this quest are React, Next.js, and Svelte.js. Together, we form an unstoppable team, conquering the web with our exceptional powers. We create websites that not only look stunning but also provide a seamless and engaging experience for every visitor.
+My trusty companions on this quest are React, Next.js, and Svelte.js. Together, we form an unstoppable team, conquering the web with our exceptional powers. We create websites that not only look stunning but also provide a seamless and engaging experience for every visitor. <br /><br />
 
 I believe that a great website or app is like a work of art that leaves a lasting impression. {`It's`} a masterpiece that combines functionality and aesthetics, leaving users in awe and craving for more.
 
