@@ -10,6 +10,7 @@ import todo2 from '../../public/Images/todo2.png'
 import match from '../../public/Images/cardmatch.png'
 import restoran from '../../public/Images/restoran.png'
 import stores from '../../public/Images/Apple-store.png'
+import zzkonstruct from '../../public/Images/konst.png'
 
 
 const workDetails = [
@@ -26,10 +27,10 @@ const workDetails = [
     page: "zzfoods.vercel.app"
   },
   {
-    img:foodfun,
-    stack: "NextJs | MongoDB | PayPal Support | React/Redux | Framer",
-    details: "An E-Commerce SPA for a food ordering company",
-    page: "zzcatering.vercel.app"
+    img:zzkonstruct,
+    stack: "NextJs | Framer Motion | React-Slider",
+    details: "An multipage website for a construction company",
+    page: "zzkonstruct.vercel.app"
   },
   {
     img:match,
@@ -43,12 +44,7 @@ const workDetails = [
     details: "An installable calculator web application with PWA support",
     page:"zzcalculatorapp.netlify.app"
   },
-  // {
-  //   img:room,
-  //   stack: "HTML | CSS | JavaScript",
-  //   details: "A cool landing page for a furniture company. Challenge by FrontEnd Mentor",
-  //   page: "roomhome-moe.netlify.app"
-  // },
+
   {
     img:todo2,
     stack: "SvelteJs",
@@ -63,9 +59,10 @@ export const Works = () => {
     <section id='projects' className={styles.about}>
     <h5>PROJECTS</h5>
     <h3>SOME OF MY RECENT WORKS?</h3> <br />
-    <p>
+    {/* <p>
       Below are some of the projects I have worked on.
-    </p> <br />
+    </p> */}
+     <br />
     <div className={styles.worksContainer}>
       {
         workDetails.map((item,key)=> (
