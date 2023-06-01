@@ -71,3 +71,8 @@
 .links i {
     /* color: #2c98f0; */
 }
+@media screen and (max-width:600px) {
+    .works {
+        height: 190px;
+    }
+}
