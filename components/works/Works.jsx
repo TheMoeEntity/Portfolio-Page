@@ -11,6 +11,8 @@ import match from '../../public/Images/cardmatch.png'
 import restoran from '../../public/Images/restoran.png'
 import stores from '../../public/Images/Apple-store.png'
 import zzkonstruct from '../../public/Images/konst.png'
+import dove from '../../public/Images/dove.png'
+import law from '../../public/Images/nlawgroup.png'
 
 
 const workDetails = [
@@ -21,15 +23,14 @@ const workDetails = [
     page: "moestores.vercel.app"
   },
   {
-    img:restoran,
-    stack: "NextJs | Framer Motion",
-    details: "A landing page for a Restaurant",
-    page: "zzfoods.vercel.app"
+    img:dove,
+    stack: "HTML | CSS | PHP | JavaScript",
+    details: "Official website for Dove Hospital, an accredited Secondary Care facility by both Lagos State Government and national Health Insurance Scheme",
+    page: "https://dovehospital.com/"
   },
   {
-    img:zzkonstruct,
-    stack: "NextJs | Framer Motion | React-Slider",
-    details: "An multipage website for a construction company",
+    img:law,
+    stack: "A website, owned by the managing attorney at Nosrati Law Group, a Beverly Hills, USA firm specializing in estate planning.",
     page: "zzkonstruct.vercel.app"
   },
   {

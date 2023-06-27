@@ -100,7 +100,7 @@ export const Experience = () => {
 
         <motion.div animate={animation}>
         <div className={styles.bubble}>
-          <h4>Frontend Web Developer intern at ZZDIGITAL (2020-2022) </h4>
+          <h4>Frontend Web Developer intern at ZZDIGITAL (2018-2022) </h4>
           <ul>
           <li>Satisfactorily developed and currently maintain a private hospital website (dovehospital.com)</li>
           <li>Worked collaboratively on a management solution platform by Yacht owners, for Yacht owners, creating multiple functional email templates for the backend (https://yachtingly.com)</li>
