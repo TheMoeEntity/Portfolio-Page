@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 import profile from '../../public/Images/me2.PNG'
+import me from '../../public/Images/me2.HEIC'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useState,useEffect} from 'react'
@@ -65,7 +66,7 @@ export const SideBar = ({open,close}) => {
       >
         <div className={styles.profile}>
             {/* <Image objectFit='cover' layout='responsive' width="100%" priority height="100%" src={`/Images/me.png`} /> */}
-            <Image width="100%" priority layout='responsive' height="100%" src={profile} />
+            <Image width="100%" priority layout='responsive' height="100%" src={me} />
         </div>
         <div className={styles.caption}>
             <h3>Moses Nwigberi</h3>

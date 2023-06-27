@@ -20,7 +20,7 @@ const workDetails = [
     img:stores,
     stack: "NextJs | Cookies | Sanity CMS | Paypal | Redux | ContextApi | JWT",
     details: "An E-commerce store with group buying, cart system, referral links options and more.",
-    page: "moestores.vercel.app"
+    page: "https://moestores.vercel.app"
   },
   {
     img:dove,
@@ -30,27 +30,28 @@ const workDetails = [
   },
   {
     img:law,
-    stack: "A website, owned by the managing attorney at Nosrati Law Group, a Beverly Hills, USA firm specializing in estate planning.",
-    page: "zzkonstruct.vercel.app"
+    details: "A website, owned by the managing attorney at Nosrati Law Group, a Beverly Hills, USA firm specializing in estate planning.",
+    stack:"NextJs | NodeMailer | React-slider",
+    page: "https://zzkonstruct.vercel.app"
   },
   {
     img:match,
     stack: "ReactJs | Firebase | DogsAPI",
     details: "An engaging online memory game",
-    page: "card-match-moe.vercel.app"
+    page: "https://card-match-moe.vercel.app"
   },
   {
     img:calculator,
     stack: "HTML | CSS | JavaScript | Bootstrap | PWA Support",
     details: "An installable calculator web application with PWA support",
-    page:"zzcalculatorapp.netlify.app"
+    page:"https://zzcalculatorapp.netlify.app"
   },
 
   {
     img:todo2,
-    stack: "SvelteJs",
+    stack: "SvelteJs | SessionStorage ",
     details: "A todo list web application. Challenge by FrontEnd Mentor",
-    page:"todoapp-pro.vercel.app"
+    page:"https://todoapp-pro.vercel.app"
   },
 
 
