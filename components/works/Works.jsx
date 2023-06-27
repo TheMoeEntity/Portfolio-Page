@@ -25,14 +25,14 @@ const workDetails = [
   {
     img:dove,
     stack: "HTML | CSS | PHP | JavaScript",
-    details: "Official website for Dove Hospital, an accredited Secondary Care facility by both Lagos State Government and national Health Insurance Scheme",
+    details: "Official website for Dove Hospital, an accredited Secondary Care facility by Lagos State Government.",
     page: "https://dovehospital.com/"
   },
   {
     img:law,
-    details: "A website, owned by the managing attorney at Nosrati Law Group, a Beverly Hills, USA firm specializing in estate planning.",
+    details: "A website, owned by the managing attorney at Nosrati Law Group, a Beverly Hills, USA firm.",
     stack:"NextJs | NodeMailer | React-slider",
-    page: "https://zzkonstruct.vercel.app"
+    page: "https://mlawsite.vercel.app"
   },
   {
     img:match,
