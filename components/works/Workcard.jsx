@@ -13,10 +13,10 @@ export const Workcard = ({img,stacks,details,page}) => {
             {details}
           <div className={styles.links}>
               <i className='fa-solid fa-link'></i>
-              <a target={`_blank`} rel="noopener noreferrer" href={`https://${page}`}>{page}</a>
+              <a target={`_blank`} rel="noopener noreferrer" href={`${page}`}>{page}</a>
           </div>
         </div>
-        <div className={styles.details}>
+        <div style={{fontSize:'12px'}} className={styles.details}>
             <p>{stacks}</p>
         </div>
     </div>
