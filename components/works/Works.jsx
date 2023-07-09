@@ -13,6 +13,7 @@ import stores from '../../public/Images/Apple-store.png'
 import zzkonstruct from '../../public/Images/konst.png'
 import dove from '../../public/Images/dove.png'
 import law from '../../public/Images/nlawgroup.png'
+import dash from '../../public/Images/dash.png'
 
 
 const workDetails = [
@@ -35,10 +36,10 @@ const workDetails = [
     page: "https://mlawsite.vercel.app"
   },
   {
-    img:match,
-    stack: "ReactJs | Firebase | DogsAPI",
-    details: "An engaging online memory game",
-    page: "https://card-match-moe.vercel.app"
+    img:dash,
+    stack: "NextJs | Next-Auth | Django | OpenAI | TypeScript | PostgreSQL",
+    details: "A complaints system for Crawford University built with OpenAI chatbot, dashboard and Django REST backend",
+    page: "https://crawfordcomplaints.vercel.app/"
   },
   {
     img:calculator,
